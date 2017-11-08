@@ -1,4 +1,4 @@
-FROM skae/centos6-jboss-base-jdk:7
+FROM skae/centos6-jboss-base-jdk:8
 
 # Set the WILDFLY_VERSION env variable
 ENV WILDFLY_VERSION 11.0.0.Final
