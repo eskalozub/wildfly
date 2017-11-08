@@ -1,7 +1,7 @@
 FROM skae/centos6-jboss-base-jdk:7
 
 # Set the WILDFLY_VERSION env variable
-ENV WILDFLY_VERSION 8.2.1.Final
+ENV WILDFLY_VERSION 11.0.0.Final
 ENV WILDFLY_SHA1 77161d682005f26acb9d2df5548c8623ba3a4905
 ENV JBOSS_HOME /opt/jboss/wildfly
 
