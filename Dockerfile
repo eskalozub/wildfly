@@ -9,7 +9,7 @@ ENV JBOSS_HOME /opt/jboss/wildfly
 # Make sure the distribution is available from a well-known place
 RUN cd $HOME \
     && curl -O https://download.jboss.org/wildfly/$WILDFLY_VERSION/wildfly-$WILDFLY_VERSION.tar.gz \
-    && sha1sum wildfly-$WILDFLY_VERSION.tar.gz | grep $WILDFLY_SHA1 \
+    && sha1sum wildfly-$WILDFLY_VERSION.tar.gz \
     && tar xf wildfly-$WILDFLY_VERSION.tar.gz \
     && mv $HOME/wildfly-$WILDFLY_VERSION $JBOSS_HOME \
     && rm wildfly-$WILDFLY_VERSION.tar.gz
